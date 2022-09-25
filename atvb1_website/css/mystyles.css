@@ -3,9 +3,20 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-body{
+
+body {
     background-color: #EFF6E0;
 }
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 32px;
+    color: #3B0086;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 header .container {
     display: flex;
     flex-direction: row;
@@ -16,7 +27,7 @@ header .container {
 header {
     position: absolute;
     width: 100%;
-    height: 42px;
+    height: 44px;
     padding: 10px 0;
     background: rgba(48, 0, 153, 0.10);
     backdrop-filter: blur(13.5px);
@@ -40,6 +51,9 @@ header h6 {
     color: #FFF;
     font-weight: 500;
     line-height: 30px;
+}
+h6:hover{
+    color: #E4572E;
 }
 
 header ul {
@@ -71,20 +85,32 @@ header li a.active {
     color: #E4572E;
 }
 
-/* Início da section dos slides */
-.primeira-parte {
-    margin: 0;
-    width: 100%;
-    height: 690px;
+/* Início main */
+/* início section 01 imagem de fundo */
+main section {
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
-.primeira-parte img {
+main section:first-child {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#primeira-parte {
+    margin: 0;
+    width: 100%;
+    height: 700px;
+}
+
+#primeira-parte img {
     background: cover;
     max-width: 100%;
 }
 
 .titulo {
-    font-size: 50px;
+    font-size: 100px;
     color: #FFF;
     font-weight: 500;
     margin-top: -400px;
@@ -93,25 +119,85 @@ header li a.active {
 }
 
 .subtitulo {
-    font-size: 20px;
+    font-size: 45px;
     color: #FFF;
     font-weight: 400;
     text-align: center;
     position: relative;
 }
+/* fim section 01 imagem de fundo */
 
-#atualizacoes {
-    max-width: 1160px;
-    margin: 0 auto;
+/* inicio section 02 recomendacoes */
+#recomendacoes .recomendacoes-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    /* margin-top: 10px; */
 }
 
-#atualizacoes h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 32px;
-    color: #3B0086;
+.recomendacao-card {
+    margin-top: 25px;
+    width: 300px;
+    height: 387px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.recomendacao-card:hover{
+    box-shadow: rgba(147, 129, 255, 0.4) 0px 5px, rgba(147, 129, 255, 0.3) 0px 10px, rgba(147, 129, 255, 0.2) 0px 15px, rgba(147, 129, 255, 0.1) 0px 20px, rgba(147, 129, 255, 0.05) 0px 25px;
+}
+
+
+#recomendacoes img {
+    width: 300px;
+    height: 300px;
+}
+
+.recomendacao-texts a {
+    text-decoration: none;
+}
+
+.recomendacao-texts {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.recomendacao-texts .nome {
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
     text-align: left;
-    margin-bottom: 20px;
+}
+
+.recomendacao-texts .artista {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+}
+.descricao-text{
+    margin-top: 10px;
+    margin-left: 10px;
+  
+}
+#recomendacoes .descricao .descricao-text {
+    color: #000;
+    font-size: 15px;
+    font-weight: 00;
+    text-align: left;
+}
+
+/* inicio section 03 motivos */
+#motivos p {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
 }
 
 .card-content {
@@ -120,7 +206,6 @@ header li a.active {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     margin-bottom: 5px;
 }
 
@@ -129,34 +214,53 @@ header li a.active {
     max-height: 280px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px 10px;
-}
-
-.card:hover {
-    background-color: #C6C7C4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
-    color: #fff;
+    margin-top: 10px;
 }
 
 .card h3 {
     margin: 10px auto;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     text-align: left;
     color: #5A00A3;
 }
 
 .card-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     text-align: left;
     margin-top: 10px;
 }
 
+.card-repeticoes {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
 
+.card-repeticoes .nomes {
+    list-style-type: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 14px;
+}
+
+.card-repeticoes .repeticoes {
+    list-style-type: none;
+    font-weight: 500;
+    color: #E4572E;
+    font-size: 14px;
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+}
+
+/* footer */
 footer {
-    border-top: 1px outside solid #5A00A3 ;
+    border-top: 1px outside solid #5A00A3;
     background-color: #5A00A3;
     color: #FFF;
     margin-top: 52px;
@@ -164,42 +268,43 @@ footer {
     justify-content: center;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer-icons{
+.footer-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5px;
 }
 
-.footer-icons img{
+.footer-icons img {
     max-width: 32px;
 }
 
-footer .footer-info{
-   justify-items: center;
+footer .footer-info {
+    justify-items: center;
 }
- footer .footer-info ul{
+
+footer .footer-info ul {
     display: flex;
     flex-direction: row;
     font-size: 16px;
     font-weight: 400;
-    list-style-type: style type disc;;
-    gap:25px;
+    list-style-type: style type disc;
+    gap: 25px;
     justify-content: center;
     padding: 25px;
 }
 
-footer li:first-child{
+footer li:first-child {
     list-style-type: none;
 }
 
-.footer-copyright{
+.footer-copyright {
     text-align: center;
     font-weight: 300;
     font-size: 10px;
