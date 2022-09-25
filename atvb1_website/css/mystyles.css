@@ -136,7 +136,6 @@ main section:first-child {
     align-items: center;
     margin-bottom: 5px;
     padding-left: 20px;
-    /* margin-top: 10px; */
 }
 
 .recomendacao-card {
@@ -151,7 +150,6 @@ main section:first-child {
 .recomendacao-card:hover{
     box-shadow: rgba(147, 129, 255, 0.4) 0px 5px, rgba(147, 129, 255, 0.3) 0px 10px, rgba(147, 129, 255, 0.2) 0px 15px, rgba(147, 129, 255, 0.1) 0px 20px, rgba(147, 129, 255, 0.05) 0px 25px;
 }
-
 
 #recomendacoes img {
     width: 300px;
@@ -183,7 +181,6 @@ main section:first-child {
 .descricao-text{
     margin-top: 10px;
     margin-left: 10px;
-  
 }
 #recomendacoes .descricao .descricao-text {
     color: #000;
@@ -191,15 +188,9 @@ main section:first-child {
     font-weight: 00;
     text-align: left;
 }
+/*fim section 02 recomendacoes */
 
-/* inicio section 03 motivos */
-#motivos p {
-    font-size: 22px;
-    font-weight: 400;
-    text-align: justify;
-    margin-top: 10px;
-}
-
+/*inicio section 03 motivos */
 .card-content {
     display: flex;
     flex-direction: row;
@@ -257,6 +248,16 @@ main section:first-child {
     text-align: end;
     flex-direction: column;
 }
+/*inicio section 03 motivos */
+
+/*inicio section 04 motivos */
+#motivos p {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+}
+/*inicio section 04 motivos */
 
 /* footer */
 footer {
