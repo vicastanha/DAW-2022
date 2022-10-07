@@ -2,21 +2,17 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-.container{
+.container {
     max-width: 1160px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-
 /* 1-top 2-right 3-bottom 4-left */
 header {
     padding: 20px 20px 0 20px;
 }
-
 /*justify-content: horizontal|align-content: vertical|
 gap: espaço entre os elementos*/
 header .container {
@@ -83,14 +79,13 @@ header li button {
     padding: 8px 20px;
     border-radius: 4px;
     margin-left: 16px;
+    line-height: 20px;
 }
-
 main {
     margin: 32px 0;
 }
-
 main h2 {
-    margin: 32px;
+    margin: 32px 0;
     font-weight: 300;
     font-size: 36px;
     line-height: 56px;
@@ -100,24 +95,22 @@ main h2 {
 section{
 margin-top: 64px;
 }
-
 #banner {
     position: relative;
-    height: 500px;
+    height: 550px;
     border: 1px solid #dcdceb;
+    background: #FFF;
     border-radius: 10px;
     color: #01528A;
     background-image: url('../img/background-house.png');
     background-repeat: no-repeat;
     background-position: right;
 }
-
 #banner h1 {
     margin: 60px 0 0 45px;
     font-weight: 300;
     font-size: 62px;
 }
-
 #banner h3 {
     margin-top: 16px;
     margin-left: 45px;
@@ -126,36 +119,32 @@ margin-top: 64px;
     line-height: 36px;
     margin-bottom: 32px;
 }
-#banner .banner-content{
+#banner .banner-content {
 position: absolute;
-top:0;
-left:0;
+top: 0;
+left: 0;
 bottom: 0;
 width: 650px;
-background: linear-gradient(270deg, rgba(255,255,255,0) 0%, #FFF 50%);
+background: linear-gradient(270deg, rgba(255,255,255,0), #FFF 50%);
 }
-
-#banner .banner-filter{
+#banner .banner-filter {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
     background-color: #FFF;
     border: 1px solid #dcdceb;
     border-radius: 10px;
-    position: absolute;
-    left:100px;
+    position:absolute;
+    left: 100px;
     right: 100px;
-    bottom:45px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    bottom: 45px;
     padding: 20px;
-    box-shadow:0px 21px 43px rgba(8,137,212,0.1);
+    box-shadow: 0px 21px 43px rgba(8,137,212,0.1);
 }
-
 #banner .filter-fields{
     width: 100%;
     margin-right: 20px;
-
 }
-
 #banner .filter-fields form{
     display: flex;
     flex-direction: row;
@@ -163,28 +152,25 @@ background: linear-gradient(270deg, rgba(255,255,255,0) 0%, #FFF 50%);
     gap:16px;
 }
 
-#banner .filter-result{
-border-left: 2px solid #0889d4;
-width: 80px;
-padding: 20px 20px 20px 40px;
-display: flex;
-flex-direction: column;
-align-items: center;
+#banner .filter-result {
+    border-left: 2px solid #0889d4;
+    width: 80px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#banner .result-label{
+#banner .result-label {
     font-size: 12px;
     font-weight: 300;
     color: #989898;
 }
-
-#banner .result-value{
+#banner .result-value {
     font-size: 16px;
     font-weight: 400;
-    color: #989898;
+    color: #000;
 }
-
-#banner .filter-result button{
+#banner .filter-result button {
     background-color: #0889d4;
     margin-top: 16px;
     color:#FFF;
@@ -195,7 +181,6 @@ align-items: center;
     text-transform: uppercase;
 }
 #banner .filter-fields select {
-    display: block;
     width: 100%;
     padding: .375rem 2.25rem .375rem .75rem;
     font-size: 12px;
@@ -211,19 +196,16 @@ align-items: center;
     border-radius: .0;
     appearance: none;
 }
-
 /* Fazendo card*/
 #cards {
     margin: 32px 0;
 }
-
 #cards .cards-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 #cards .card {
     width: 530px;
     display: flex;
@@ -235,18 +217,15 @@ align-items: center;
     margin-bottom: 48px;
     position: relative;
 }
-
 #cards .card img {
     width: 160px;
     height: 180px;
 }
-
 #cards .card h4 {
     font-weight: 400;
     margin-bottom: 12px;
     text-align: justify;
 }
-
 /*max-height utilizado para delimitar o máximo da altura, 
 overflow: hidden - esconde se tiver coisas demais*/
 #cards .card p {
@@ -254,8 +233,9 @@ overflow: hidden - esconde se tiver coisas demais*/
     margin-bottom: 12px;
     text-align: justify;
     color: #8f90a6;
+    max-height: 72px;
+    overflow: hidden;
 }
-
 #cards .card .card-price {
     position: absolute;
     display: flex;
@@ -264,7 +244,6 @@ overflow: hidden - esconde se tiver coisas demais*/
     bottom: 20px;
 
 }
-
 #cards .card-price p {
     background-color: #0889d4;
     color: #FFF;
@@ -272,8 +251,7 @@ overflow: hidden - esconde se tiver coisas demais*/
     border-radius: 4px;
     padding: 8px 16px;
 }
-
-#reasons{
+#reasons {
     margin-top: 0;
 }
 #reasons .reasons-content {
@@ -282,32 +260,25 @@ overflow: hidden - esconde se tiver coisas demais*/
     justify-content: space-between;
     margin-bottom: 24px;
 }
-
 #reasons .reasons-content .reason {
     width: 100%;
     border-left: 2px solid #0889d4;
 }
-
-
 #reasons .reason:first-of-type {
     border-left: none;
 }
-
 #reasons .reason p {
     text-align: center;
 }
-
 #reasons .reason .reason-value {
     font-size: 32px;
     font-weight: 400;
 }
-
 #reasons .reason .reason-label {
     font-size: 24px;
     font-weight: 300;
     color: #8F90A6;
 }
-
 #specialists .specialists-content {
     display: flex;
     flex-direction: row;
@@ -315,7 +286,6 @@ overflow: hidden - esconde se tiver coisas demais*/
     gap: 24px;
     margin-bottom: 24px;
 }
-
 #specialists .specialist {
     width: 100%;
     border: 1.5px solid #dcdceb;
@@ -323,18 +293,15 @@ overflow: hidden - esconde se tiver coisas demais*/
     padding: 20px;
     color: #01528A;
 }
-
 #specialists .specialist h5 {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 8px;
 }
-
 #specialists .specialist p {
     font-size: 14px;
     font-weight: 300;
 }
-
 /*padding empurra o conteúdo 
 -o margin move o objeto*/
 #specialists .specialist-detail {
@@ -344,7 +311,6 @@ overflow: hidden - esconde se tiver coisas demais*/
     text-align: justify;
     padding-top: 16px;
 }
-
 /*1rem = 16 px*/
 #values .values-container {
     display: flex;
@@ -362,6 +328,7 @@ overflow: hidden - esconde se tiver coisas demais*/
 #values .values-content p {
     font-size: 14px;
     font-weight: 300;
+    text-align: justify;
 }
 
 #values .values-detail {
@@ -411,7 +378,7 @@ footer .footer-company .footer-logo {
     font-weight: 300;
     line-height: 32px;
     padding-left: 40px;
-    background-image: url(../img/logo_imobiliaria_branca.svg);
+    background-image: url('../img/logo_imobiliaria_branca.svg');
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: 32px;
@@ -465,19 +432,19 @@ footer .footer-social span{
 }
 
 footer .footer-social .facebook{
-    background-image: url(../img/icon-facebook.svg);
+    background-image: url('../img/icon-facebook.svg');
 }
 
 footer .footer-social .twitter{
-    background-image: url(../img/icon-twitter.svg);
+    background-image: url('../img/icon-twitter.svg');
 
 }
 footer .footer-social .instagram{
-    background-image: url(../img/icon-instagram.svg);
+    background-image: url('../img/icon-instagram.svg');
 }
 
 footer .footer-social .linkedin{
-    background-image: url(../img/icon-linkedin.svg);
+    background-image: url('../img/icon-linkedin.svg');
 }
 
 footer .footer-copyright{
