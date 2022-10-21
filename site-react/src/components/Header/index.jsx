@@ -6,7 +6,7 @@ import imgLogo from '../../assets/img/logo_imobiliaria.svg';
 export function Header() {
     return (
 
-        <header  >
+        <header>
         <div className="container">
             <div className="brand">
                 <img src={imgLogo} alt="a logo da imobiliaria" />
