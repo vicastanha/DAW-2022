@@ -1,36 +1,36 @@
-import './style.css';
+import './style.css'
 
 import imgLogo from '../../assets/img/place-company.png';
 
-export function SectionValues(){
-    return(
+export function SectionValues() {
+    return (
+
         <section id="values">
-                    <h2>Quem é a Imobiliária Unimater?</h2>
+            <h2>Que é a Imobiliária Unimater?</h2>
 
-                    <div className="values-container">
-                        <img src={imgLogo} alt="Foto da firma" />
+            <div className="values-container">
+                <img src={imgLogo} alt="Foto da firma" />
 
-                        <div className="values-content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, doloremque reiciendis
-                                facere maiores praesentium sapiente aliquid ad repellendus unde. Incidunt numquam recusandae
-                                quos, molestias impedit error molestiae nobis quasi animi?</p>
+                <div className="values-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos dolores necessitatibus, blanditiis corporis veritatis impedit velit temporibus mollitia hic sed fugit at vitae non exercitationem rem corrupti nostrum officia.</p>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illo quasi temporibus aspernatur
-                                repellat non, esse nesciunt minima quisquam, praesentium animi delectus debitis
-                                necessitatibus labore corporis minus aut! In, consectetur!</p>
-                            <div className="values-detail">
-                                <div className="value">
-                                    <span>Alto Padrão</span>
-                                    <span>Agilidade</span>
-                                </div>
+                    <p>Neque eveniet fugiat at deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse doloremque perferendis! Culpa earum reiciendis repudiandae, officiis magnam voluptate ex quas deleniti, enim ad excepturi.</p>
 
-                                <div className="value">
-                                    <span>Facilidade</span>
-                                    <span>Confiabilidade</span>
-                                </div>
-                            </div>
+                    <div className="value-detail">
+                        <div className="value">
+                            <span>Alto Padrão</span>
+                            <span>Agilidade</span>
+                        </div>
+
+                        <div className="value">
+                            <span>Facilidade</span>
+                            <span>Confiabilidade</span>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
+
+
     )
 }
