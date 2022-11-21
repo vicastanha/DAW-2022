@@ -78,9 +78,10 @@ export const ImovelContext = createContext();
 export function ImovelContextProvider(props) {
     
     const [imoveis, setImoveis] = useState(dados);
+    const[paramFilter,setParamFilter] = useState();
     
     return (
-        <ImovelContext.Provider value={{imoveis}}>
+        <ImovelContext.Provider value={{imoveis, setParamFilter}}>
             {props.children}
         </ImovelContext.Provider>
     )
