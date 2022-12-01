@@ -1,0 +1,33 @@
+main section:first-child {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#primeira-parte {
+    margin: 0;
+    width: 100%;
+    height: 700px;
+}
+
+#primeira-parte img {
+    background: cover;
+    max-width: 100%;
+}
+
+.titulo {
+    font-size: 100px;
+    color: #FFF;
+    font-weight: 500;
+    margin-top: -400px;
+    text-align: center;
+    position: relative;
+}
+
+.subtitulo {
+    font-size: 45px;
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}

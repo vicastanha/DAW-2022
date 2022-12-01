@@ -1,0 +1,60 @@
+#recomendacoes .recomendacoes-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.recomendacao-card {
+    margin-top: 25px;
+    width: 300px;
+    height: 387px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.recomendacao-card:hover{
+    box-shadow: rgba(147, 129, 255, 0.4) 0px 5px, rgba(147, 129, 255, 0.3) 0px 10px, rgba(147, 129, 255, 0.2) 0px 15px, rgba(147, 129, 255, 0.1) 0px 20px, rgba(147, 129, 255, 0.05) 0px 25px;
+}
+
+#recomendacoes img {
+    width: 300px;
+    height: 300px;
+}
+
+.recomendacao-texts a {
+    text-decoration: none;
+}
+
+.recomendacao-texts {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.recomendacao-texts .nome {
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.recomendacao-texts .artista {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+}
+.descricao-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#recomendacoes .descricao .descricao-text {
+    color: #000;
+    font-size: 15px;
+    font-weight: 00;
+    text-align: left;
+}
