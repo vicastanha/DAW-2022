@@ -1,7 +1,3 @@
-/* Fazendo card*/
-#cards {
-    margin: 32px 0;
-}
 #cards .cards-content {
     display: flex;
     flex-direction: row;
@@ -28,8 +24,6 @@
     margin-bottom: 12px;
     text-align: justify;
 }
-/*max-height utilizado para delimitar o máximo da altura, 
-overflow: hidden - esconde se tiver coisas demais*/
 #cards .card p {
     font-weight: 300;
     margin-bottom: 12px;
@@ -48,17 +42,15 @@ overflow: hidden - esconde se tiver coisas demais*/
 }
 #cards .card-price p {
     background-color: #0889d4;
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     border-radius: 4px;
     padding: 8px 16px;
 }
-
-#cards .not-found{
+#cards .not-found {
     font-weight: 300;
     font-size: 32px;
     padding-bottom: 56px;
-    color: #8f90a6;
+    color:#8f90a6;
     text-align: center;
-
 }
